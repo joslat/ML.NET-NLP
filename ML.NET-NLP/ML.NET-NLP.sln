@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ML.NET-NLP-Test", "ML.NET-NLP-Test\ML.NET-NLP-Test.csproj", "{4A8C97B4-91CA-4156-87E2-4AF339C44D62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A8C97B4-91CA-4156-87E2-4AF339C44D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A8C97B4-91CA-4156-87E2-4AF339C44D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A8C97B4-91CA-4156-87E2-4AF339C44D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A8C97B4-91CA-4156-87E2-4AF339C44D62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DAD89BD-5A3D-4D74-B2BE-976CB3E64EC6}
+	EndGlobalSection
+EndGlobal
