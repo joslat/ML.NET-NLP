@@ -6,4 +6,8 @@
     <RootNamespace>ML.NET_NLP_Test</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ML.NET-Tokenizer\ML.NET-Tokenizer.csproj" />
+  </ItemGroup>
+
 </Project>
