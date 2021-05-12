@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ML.NET-Tokenizer\ML.NET-Tokenizer.csproj" />
+    <ProjectReference Include="..\ML.NET-Tokenizer\ML.NET-NLP.csproj" />
   </ItemGroup>
 
 </Project>

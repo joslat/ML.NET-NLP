@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ML.NET_Tokenizer
+namespace ML.NET_NLP
 {
     public class TextTokens
     {

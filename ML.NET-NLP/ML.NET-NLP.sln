@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ML.NET-NLP-Test", "ML.NET-NLP-Test\ML.NET-NLP-Test.csproj", "{4A8C97B4-91CA-4156-87E2-4AF339C44D62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ML.NET-Tokenizer", "ML.NET-Tokenizer\ML.NET-Tokenizer.csproj", "{4A6C8193-1D29-4515-BAAD-4DDD6E14106E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ML.NET-NLP", "ML.NET-Tokenizer\ML.NET-NLP.csproj", "{4A6C8193-1D29-4515-BAAD-4DDD6E14106E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using Microsoft.ML;
 
-namespace ML.NET_Tokenizer
+namespace ML.NET_NLP
 {
     public class MLNET_Tokenizer
     {
-        const string _outputColumnName = "Tokens";
-        const string _inputColumnName = "Text";
+        const string _outputColumnName = nameof(TextTokens.Tokens); //"Tokens";
+        const string _inputColumnName = nameof(TextData.Text); //"Text";
         private char[] _separators = new[] { ' ', '.', ',' };
 
         public TextTokens Tokenize(string text)
