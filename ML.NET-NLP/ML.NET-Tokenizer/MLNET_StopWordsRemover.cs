@@ -22,19 +22,24 @@ namespace ML.NET_NLP
                                 MLNET_Params.InputColumnName,
                                 MLNET_Params.Separators)
                 .Append(context.Transforms.Text.RemoveDefaultStopWords(
-                                MLNET_Params.OutputColumnName, 
+                                MLNET_Params.OutputColumnName,
                                 MLNET_Params.OutputColumnName,
                                 detectedLanguage
-                                ));
-
-            if (MLNET_Params.CustomStopWords.Any())
-            {
-                tokenization.Append(context.Transforms.Text.RemoveStopWords(
+                                ))
+                .Append(context.Transforms.Text.RemoveStopWords(
                                 MLNET_Params.OutputColumnName,
                                 MLNET_Params.OutputColumnName,
                                 MLNET_Params.CustomStopWords
                                 ));
-            }
+
+            //if (MLNET_Params.CustomStopWords.Any())
+            //{
+            //    tokenization = tokenization.Append(context.Transforms.Text.RemoveStopWords(
+            //                    MLNET_Params.OutputColumnName,
+            //                    MLNET_Params.OutputColumnName,
+            //                    MLNET_Params.CustomStopWords
+            //                    ));
+            //}
 
 
             var tokenModel = tokenization.Fit(data);

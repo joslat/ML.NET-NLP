@@ -32,7 +32,7 @@ namespace ML.NET_NLP
             }
         }
 
-        private static string[] _customStopWords = new[] { "Swiss", "Life", };
+        private static string[] _customStopWords = new[] { "Swiss", "Life", "some" };
         public static string[] CustomStopWords
         {
             get
