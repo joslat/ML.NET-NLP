@@ -2,11 +2,22 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>ML.NET-NLP</RootNamespace>
+    <RootNamespace>ML.NET_NLP</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Core14.profile.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Core14.profile.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.ML" Version="1.5.5" />
+    <PackageReference Include="NTextCat" Version="0.3.65" />
   </ItemGroup>
 
 </Project>
