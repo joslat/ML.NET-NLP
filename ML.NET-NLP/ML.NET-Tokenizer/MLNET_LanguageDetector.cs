@@ -10,9 +10,12 @@ namespace ML.NET_NLP
 {
     // References for detecting a language with C#
     // https://github.com/ivanakcheurov/ntextcat
+    // https://github.com/pdonald/language-detection (other to check...)
     // https://stackoverflow.com/Questions/1192768/how-to-detect-the-language-of-a-string
     // https://www.codeproject.com/Articles/43198/Detect-a-written-text-s-language
     // http://idsyst.hu/development/language_detector.html
+    // https://fasttext.cc/
+    // https://fasttext.cc/docs/en/language-identification.html
     public static class MLNET_LanguageDetector
     {
 

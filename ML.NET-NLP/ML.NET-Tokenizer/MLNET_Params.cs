@@ -23,6 +23,15 @@ namespace ML.NET_NLP
                 return _inputColumnName; }
         }
 
+        private static string _nGramColumnName = nameof(TextNGrams.NGrams);
+        public static string NGramColumnName
+        {
+            get
+            {
+                return _nGramColumnName;
+            }
+        }
+
         private static char[] _separators = new[] { ' ', '.', ',' };
         public static char[] Separators
         {
