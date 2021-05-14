@@ -33,13 +33,13 @@ namespace ML.NET_NLP
                                 MLNET_Params.OutputColumnName,
                                 MLNET_Params.CustomStopWords
                                 ))
-                .Append(context.Transforms.Conversion.MapValueToKey(MLNET_Params.OutputColumnName)
+                .Append(context.Transforms.Conversion.MapValueToKey(MLNET_Params.OutputColumnName))
                 .Append(context.Transforms.Text.ProduceNgrams(
                     MLNET_Params.NGramColumnName,
                     MLNET_Params.OutputColumnName,
                     ngramLength: 2,
                     useAllLengths: false,
-                    weighting: Microsoft.ML.Transforms.Text.NgramExtractingEstimator.WeightingCriteria.TfIdf)));
+                    weighting: Microsoft.ML.Transforms.Text.NgramExtractingEstimator.WeightingCriteria.TfIdf));
 
             var fittedData = nGramPipelineChain.Fit(dataView);
             // we sort of get the ngrams here...

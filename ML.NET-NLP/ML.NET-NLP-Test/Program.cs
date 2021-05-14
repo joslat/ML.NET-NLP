@@ -30,12 +30,16 @@ namespace ML.NET_NLP_Test
             //tokensWoStopWords.ConsolePrint();
 
 
-            // 02 - Removal of Stop Words
-            Console.WriteLine("03 - NGram generation:");
-            MLNET_NGrams nGramsGenerator = new MLNET_NGrams();
-            nGramsGenerator.Generate(toProcess);
-            //Console.WriteLine("The tokenized output is:");
-            //tokensWoStopWords.ConsolePrint();
+            //// 03 - NGram generation
+            //Console.WriteLine("03 - NGram generation:");
+            //MLNET_NGrams nGramsGenerator = new MLNET_NGrams();
+            //nGramsGenerator.Generate(toProcess);
+
+            // 04 - Bag Of Words generation
+            Console.WriteLine("04 - Bag of Words generation:");
+            MLNET_BagOfWords bagOfWordsGenerator = new MLNET_BagOfWords();
+            bagOfWordsGenerator.Generate(toProcess);
+
 
 
             Console.ReadLine();
