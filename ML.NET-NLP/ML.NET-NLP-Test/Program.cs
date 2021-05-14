@@ -36,11 +36,17 @@ namespace ML.NET_NLP_Test
             //nGramsGenerator.Generate(toProcess);
 
             // 04 - Bag Of Words generation
-            Console.WriteLine("04 - Bag of Words generation:");
-            MLNET_BagOfWords bagOfWordsGenerator = new MLNET_BagOfWords();
-            bagOfWordsGenerator.Generate(toProcess);
+            //Console.WriteLine("04 - Bag of Words generation:");
+            //MLNET_BagOfWords bagOfWordsGenerator = new MLNET_BagOfWords();
+            //bagOfWordsGenerator.Generate(toProcess);
 
-
+            // 05 - Text Normalization
+            Console.WriteLine("05 - Text Normalization:");
+            MLNET_Normalizer textNormalizer = new MLNET_Normalizer();
+            var normalizedText = textNormalizer.Normalize(toProcess);
+            Console.WriteLine($"Original text - {toProcess}");
+            Console.WriteLine(Environment.NewLine);
+            Console.WriteLine($"Normalized text - {normalizedText}");
 
             Console.ReadLine();
         }
